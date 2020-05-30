@@ -24,11 +24,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                     <label for="exampleInputPassword1">Plaque</label>
                     <input type="text" class="form-control" name="plaque" required>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" name="trusted">
-                    <label class="form-check-label" for="exampleCheck1">Trusted</label>
-                </div>
-                <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
+                <button type="submit" class="btn btn-primary" style="float: right;">Add Car</button>
             </form>
         </div>
         @if(@ViewBag.Warning != null){

@@ -31,13 +31,6 @@ namespace parking_automation_dotnet_core.Controllers
                 var name = Request.Form["name"];
                 var color = Request.Form["color"];
                 var plaque = Request.Form["plaque"];
-                var trusted = false;
-
-
-                if (Request.Form["trusted"] == "on")
-                {
-                    trusted = true;
-                }
 
                 if (Parking.carsCount() < 5)
                 {
@@ -48,7 +41,7 @@ namespace parking_automation_dotnet_core.Controllers
                         Color = color,
                         Plaque = plaque,
                         EnterDate = DateTime.Now,
-                        Trusted = Convert.ToBoolean(trusted)
+
                     };
 
                     var DummyDataFile = Parking.DummyDataFile;
