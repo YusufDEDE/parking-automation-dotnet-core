@@ -31,5 +31,11 @@ Layout = "~/Views/Shared/_Layout.cshtml";
                 <button type="submit" class="btn btn-primary" style="float: right;">Submit</button>
             </form>
         </div>
+        @if(@ViewBag.Warning != null){
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.Warning
+        </div>
+        }
+
     </div>
 </div>
