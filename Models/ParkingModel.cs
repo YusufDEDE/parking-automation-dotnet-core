@@ -18,6 +18,11 @@ namespace parking_automation_dotnet_core.Models
         public DateTime EnterDate { get; set; }
         public bool Trusted { get; set; }
 
+        public static int carsCount()
+        {
+            return GetCars().Count;
+        }
+
         public static List<Parking> GetCars()
         {
             List<Parking> cars = new List<Parking>();

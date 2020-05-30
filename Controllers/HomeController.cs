@@ -20,7 +20,18 @@ namespace parking_automation_dotnet_core.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.state = 0;
+
+            if (Parking.GetCars() != null)
+            {
+                var autopark_state = Parking.carsCount();
+                ViewBag.state = autopark_state;
+                return View(autopark_state);
+            }
+
             return View();
+
+
         }
 
         public IActionResult Privacy()

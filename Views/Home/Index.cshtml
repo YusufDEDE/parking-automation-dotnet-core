@@ -1,8 +1,39 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
 }
+<h1 class="text-center">Welcome Parking Automation</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row d-flex justify-content-center mt-5">
+    <div class="col-lg-8 text-center">
+        <div class="p-3 mb-2 bg-info text-white">
+            Autopark Cars Count :
+            <span class="badge badge-light" style="font-size: 18px;">@ViewBag.state</span>
+            @if(@ViewBag.state == 5 ){
+            <span class="badge badge-light ml-3" style="font-size: 18px;">
+                Autopark FULL
+            </span>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="row d-flex justify-content-center mt-5">
+    <div class="col-lg-4 col-md-12 col-xs-12 mb-2">
+        <h4>List AutoPark all cars</h4>
+        <a class="text-white btn btn-warning w-100" asp-area="" asp-controller="Parking" asp-action="Index">List All
+            Cars</a>
+    </div>
+    <div class="col-lg-4 col-md-12 col-xs-12 mb-2">
+        <h4>New cars enter in autopark</h4>
+        @if(@ViewBag.state == 5 ){
+        <a class="text-white btn btn-danger w-100" asp-area="" asp-controller="Parking" asp-action="Index">
+            AutoPark FULL
+        </a>
+        }
+        else {
+        <a class="text-white btn btn-success w-100" asp-area="" asp-controller="Parking" asp-action="Create">Cars
+            Enter</a>
+        }
+
+    </div>
 </div>
