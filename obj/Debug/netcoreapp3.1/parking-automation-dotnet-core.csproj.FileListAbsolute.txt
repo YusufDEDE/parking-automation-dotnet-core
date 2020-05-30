@@ -37,3 +37,5 @@
 /home/commodore64/Desktop/parking-automation-dotnet-core/obj/Debug/netcoreapp3.1/parking-automation-dotnet-core.csproj.CopyComplete
 /home/commodore64/Desktop/parking-automation-dotnet-core/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /home/commodore64/Desktop/parking-automation-dotnet-core/bin/Debug/netcoreapp3.1/FakeData.json
+/home/commodore64/Desktop/parking-automation-dotnet-core/obj/Debug/netcoreapp3.1/Razor/Views/Parking/index.cshtml.g.cs
+/home/commodore64/Desktop/parking-automation-dotnet-core/obj/Debug/netcoreapp3.1/Razor/Views/Parking/Create.cshtml.g.cs

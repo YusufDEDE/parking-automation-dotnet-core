@@ -16,7 +16,7 @@ namespace parking_automation_dotnet_core.Models
         public string Plaque { get; set; }
 
         public DateTime EnterDate { get; set; }
-        public DateTime ExitDate { get; set; }
+        public bool Trusted { get; set; }
 
         public static List<Parking> GetCars()
         {

@@ -20526,6 +20526,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/commodore64/Desktop/parking-automation-dotnet-core/Views/Parking/index.cshtml",
+      "TargetPath": "Views\\Parking\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/commodore64/Desktop/parking-automation-dotnet-core/Views/Parking/Create.cshtml",
+      "TargetPath": "Views\\Parking\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/commodore64/Desktop/parking-automation-dotnet-core/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
