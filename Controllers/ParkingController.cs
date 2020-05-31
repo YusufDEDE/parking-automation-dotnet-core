@@ -13,20 +13,17 @@ namespace parking_automation_dotnet_core.Controllers
     {
         public ActionResult Index()
         {
-            var cars = Parking.GetCars();
-            return View(cars);
+            return View(Parking.GetCars());
         }
 
         public ActionResult Create()
         {
             Random random = new Random();
             int id = random.Next(00000, 99999);
-            ViewBag.Submited = false;
             var created = false;
 
             if (HttpContext.Request.Method == "POST")
             {
-                ViewBag.Submited = true;
 
                 var name = Request.Form["name"];
                 var color = Request.Form["color"];
@@ -72,10 +69,7 @@ namespace parking_automation_dotnet_core.Controllers
                 ViewBag.Message = "Car was created succesfully!...";
                 return RedirectToAction("Index", "Parking");
             }
-            else
-            {
-                ViewBag.Message = "There was an error while creating the car.";
-            }
+
 
             return View();
 
@@ -111,4 +105,5 @@ namespace parking_automation_dotnet_core.Controllers
             return RedirectToAction("Index", "Parking");
         }
     }
+
 }
